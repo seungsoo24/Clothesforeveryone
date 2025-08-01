@@ -36,6 +36,18 @@
       color: #2c3e50;
       margin-bottom: 0.5rem;
     }
+    .goals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .goal-card {
+      background-color: #ecf0f1;
+      padding: 1rem 1.5rem;
+      border-left: 5px solid #2c3e50;
+      border-radius: 8px;
+    }
     footer {
       background: #2c3e50;
       color: white;
@@ -65,14 +77,29 @@
 
     <section id="goals" class="section">
       <h2>Our Goals</h2>
-      <p>We are committed to building a long-lasting system for clothing redistribution in the San Diego area. Our goals include:</p>
-      <ul>
-        <li>Donating to multiple local clothing shelters including Sharia’s Closet, Father Joe’s Villages, and San Diego Rescue Mission</li>
-        <li>Creating a network of donors and volunteers to collect and sort clothing</li>
-        <li>Partnering with schools and community centers to host clothing drives and workshops</li>
-        <li>Raising awareness around sustainable fashion and the power of giving</li>
-        <li>Launching a mobile donation program to bring clothing directly to underserved communities</li>
-      </ul>
+      <p>We are committed to building a long-lasting system for clothing redistribution in the San Diego area. Here’s what we’re aiming to do:</p>
+      <div class="goals-grid">
+        <div class="goal-card">
+          <strong>👕 Donate to Local Shelters:</strong>
+          <p>Partner with Sharia’s Closet, Father Joe’s Villages, and San Diego Rescue Mission to provide clothing for those in need.</p>
+        </div>
+        <div class="goal-card">
+          <strong>🤝 Build a Volunteer Network:</strong>
+          <p>Create a strong team of donors, sorters, and delivery volunteers to expand our reach.</p>
+        </div>
+        <div class="goal-card">
+          <strong>🏫 Partner with Schools:</strong>
+          <p>Host clothing drives and sewing workshops in local schools and community centers.</p>
+        </div>
+        <div class="goal-card">
+          <strong>🌱 Promote Sustainable Fashion:</strong>
+          <p>Educate our community about the environmental benefits of reusing and upcycling clothing.</p>
+        </div>
+        <div class="goal-card">
+          <strong>🚚 Launch a Mobile Program:</strong>
+          <p>Bring clothing and support services directly to underserved neighborhoods in San Diego.</p>
+        </div>
+      </div>
     </section>
 
     <section id="donate" class="section">
